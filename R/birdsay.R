@@ -104,9 +104,13 @@ birdsay <- function(
   bird_width <- max(nchar(bird))
 
   # default styles
-  if (is.null(bird_style)) bird_style <- identity
+
+  if (is.null(bird_style)) {
+    bird_colour <- sample(c(31:36), size = 1)
+    bird_style <- function(x) paste0("\033[", bird_colour, "m", x, "\033[39m")
+  }
   if (is.null(text_style)) text_style <- identity
-  if (is.null(citation_style)) citation_style <- function(x) paste0("\033[3m", x, "\033[23m")
+  if (is.null(citation_style)) citation_style <- function(x) paste0("\033[2;3m", x, "\033[0m")
 
 
   # default say
