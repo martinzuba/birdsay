@@ -20,13 +20,13 @@ birdsay(
 If \code{NULL}, a random quote is generated from the selected source.}
 
 \item{bird}{Character vector defining the ASCII bird. If \code{NULL},
-a default bird is used.}
+a default bird is used, created by jgs.}
 
 \item{width}{Integer. Maximum width used when formatting fortune/statquote
 output. Defaults to 100.}
 
 \item{bird_style}{Function applied to each line of the ASCII bird.
-Defaults to \code{identity}.}
+Defaults to random colours.}
 
 \item{text_style}{Function applied to normal message text lines.
 Defaults to \code{identity}.}

@@ -12,13 +12,13 @@
 #'   If \code{NULL}, a random quote is generated from the selected source.
 #'
 #' @param bird Character vector defining the ASCII bird. If \code{NULL},
-#'   a default bird is used.
+#'   a default bird is used, created by jgs.
 #'
 #' @param width Integer. Maximum width used when formatting fortune/statquote
 #'   output. Defaults to 100.
 #'
 #' @param bird_style Function applied to each line of the ASCII bird.
-#'   Defaults to \code{identity}.
+#'   Defaults to random colours.
 #'
 #' @param text_style Function applied to normal message text lines.
 #'   Defaults to \code{identity}.
